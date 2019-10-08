@@ -72,30 +72,42 @@ body {
 
 /* Navigation bar */
 .nav-bar {
-	/* white-space: nowrap; */
+	padding: 2% 0;
 	overflow: hidden;
-	background: white;
 	position: fixed;
-	width: 94%;
 	border-bottom: 2px dashed black;
+	width: 94%;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.nav-bar a {
+nav {
+	display: flex;
+	justify-content: space-between;
+}
+
+.links {
+	width: 60%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.links a {
 	text-decoration: none;
 	color: gray;
 }
 
-.logo-center-contents {
-	display: inline-block;
+.logo img {
+	max-height: 100%;
+	max-width: 100%;
 }
 
 .nav-items {
-	padding: 2% 0;
-	margin: 2% 9% 2% 0;
-	vertical-align: middle;
 	text-align: left;
-	box-sizing: border-box;
-	display: inline-block;
+	padding: 2% 0%;
 	border-top: 4px solid white;
 	border-bottom: 4px solid white;
 	background: white;
@@ -108,20 +120,13 @@ body {
 	padding: 0.75% 0;
 }
 
-.logo {
-	/* margin: 0 0 0 5%; */
-	/* padding: 0 0 0 9%; */
-	vertical-align: middle;
-	display: inline-block;
-	width: 13%;
-	height: 13%;
-}
-
 /* Marketing header */
 
 header {
 	padding: 15% 0 5% 0;
 	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: center;
 }
 
 .text-header-contents {
@@ -130,7 +135,9 @@ header {
 	text-align: center;
 	vertical-align: middle;
 	letter-spacing: 1px;
-	display: inline-block;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	width: 45%;
 	margin-right: 5%;
 	margin-bottom: 15%;
@@ -148,18 +155,18 @@ header {
 	font-size: 150%;
 	background: white;
 	text-decoration: none;
-	vertical-align: middle;
 	border: 1px solid black;
+	width: 33%;
 	padding: 1% 5%;
 	color:black;
 	font-family: 'Times New Roman', Times, serif;
 }
 
 .logo-header-contents {
-	display: inline-block;
+	display: flex;
+	align-items: center;
 	width: 45%;
 	padding: 0 0 0 0;
-	vertical-align: middle;
 }
 
 .logo-header-img {
@@ -167,25 +174,36 @@ header {
 	height: 100%;
 }
 
+.services-header {
+	display: flex;
+	align-items: stretch;
+}
+
+.services-header-img {
+	width: 100%;
+	margin: 2% 0;
+}
+
+
 /* Content */
 
 /* Three columns of content */
-.triple-inline-block {
-	display: inline-block;
-	width: 30%;
+.three-columns {
+	display: flex;
 	margin-right: 3%;
+	flex-direction: column;
 }
 
 /* Two columns of content */
-.double-inline-block {
-	display: inline-block;
-	width: 43%;
+.two-columns {
+	display: flex;
+	flex-direction: column;
 	margin-right: 6%;
 	margin-bottom: 2%;
 }
 
 .top-content {
-	display: inline-block;
+	display: flex;
 	width: 100%;
 	margin-bottom: 2%;
 	margin-top: 3%;
@@ -199,7 +217,7 @@ header {
 }
 
 .bottom-content {
-	display: inline-block;
+	display: flex;
 	width: 100%;
 	margin-top: 3%;
 	padding: 0 0 5% 0;
