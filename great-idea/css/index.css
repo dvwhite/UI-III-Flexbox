@@ -66,8 +66,10 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	margin-left: 4%;
-	margin-right: 2%;
+	/* margin-left: 4%;
+	margin-right: 2%; */
+	margin: 0 auto;
+	width: 55%;
 }
 
 /* Navigation bar */
@@ -76,7 +78,7 @@ body {
 	overflow: hidden;
 	position: fixed;
 	border-bottom: 2px dashed black;
-	width: 94%;
+	width: 55%;
 	background: white;
 	display: flex;
 	justify-content: space-between;
@@ -107,7 +109,7 @@ nav {
 
 .nav-items {
 	text-align: left;
-	padding: 0% 0%;
+	padding: 2% 0%;
 	border-top: 4px solid white;
 	border-bottom: 4px solid white;
 	background: white;
@@ -151,12 +153,16 @@ header {
 	font-size: 500%;
 }
 
+.marketing-header h1 {
+	font-size: 130%;
+}
+
 .marketing-anchor {
-	font-size: 150%;
+	font-size: 110%;
 	background: white;
 	text-decoration: none;
 	border: 1px solid black;
-	width: 33%;
+	width: 35%;
 	padding: 1% 5%;
 	color:black;
 	font-family: 'Times New Roman', Times, serif;
@@ -169,10 +175,10 @@ header {
 	padding: 0 0 0 0;
 }
 
-.logo-header-img {
+/* .logo-header-img {
 	width: 100%;
 	height: 100%;
-}
+} */
 
 .services-header {
 	display: flex;
@@ -237,19 +243,38 @@ div.footer {
 
 /* Servies.html content tiles */
 
-.tile {
-	background: gray;
+.tile-row {
+	display: flex;
+	justify-content: space-between;
+	margin: 3% 0;
+}
+
+.col1-tile {
+	background: whitesmoke;
 	border: 1px solid black;
-	padding: 1%;
-	margin: 1%;
+	padding: 2%;
+	width: 48.5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.col2-tile {
+	background: whitesmoke;
+	border: 1px solid black;
+	padding: 2%;
+	width: 48.5%;
+	display: flex;
+	flex-direction: column;
 }
 
 .small-btn {
-	/* font-size: 100%; */
 	background: white;
 	text-decoration: none;
+	text-align: center;
 	border: 1px solid black;
 	width: 33%;
+	margin: 5% 0 0 0;
 	padding: 1% 5%;
 	color:black;
 	font-family: 'Times New Roman', Times, serif;
