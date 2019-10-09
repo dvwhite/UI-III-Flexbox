@@ -260,7 +260,7 @@ div.footer {
 
 .col1-tile {
 	background: whitesmoke;
-	border: 1px solid black;
+	border: 1.25px solid black;
 	padding: 2%;
 	width: 48.5%;
 	display: flex;
@@ -270,23 +270,33 @@ div.footer {
 
 .col2-tile {
 	background: whitesmoke;
-	border: 1px solid black;
+	border: 1.25px solid black;
 	padding: 2%;
 	width: 48.5%;
 	display: flex;
 	flex-direction: column;
 }
 
+.col1-tile p {
+	line-height: 110%;
+}
+
+.col2-tile p {
+	line-height: 110%;
+}
+
 .small-btn {
 	background: white;
 	text-decoration: none;
 	text-align: center;
+	font-size: 75%;
 	border: 1px solid black;
-	width: 33%;
+	border-radius: 5px;
+	width: 37.5%;
 	margin: 5% 0 0 0;
-	padding: 1% 5%;
+	padding: 2.75% 5%;
 	color:black;
-	font-family: 'Times New Roman', Times, serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Facts section styles */
@@ -312,12 +322,15 @@ div.footer {
 .facts-img img {
 	max-height: 100%;
 	/* TODO: do this elegantly */
+	/* Sitting silently
+	   Perusing Stack Overflow
+	   For helpful div tips */
 	width: 97%;
 }
 
 ul {
 	margin-top: 4%;
-	list-style: initial;
+	list-style: square;
 	list-style-position: inside;
 }
 
