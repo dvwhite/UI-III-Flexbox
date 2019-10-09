@@ -241,7 +241,16 @@ div.footer {
 	margin: 5% 0 10% 0;
 }
 
+.marketing-header {
+	margin-bottom: 3%;
+}
+
 /* Servies.html content tiles */
+
+.content-tiles {
+	border-top: 1.25px solid black;
+	border-bottom: 1.25px solid black;
+}
 
 .tile-row {
 	display: flex;
@@ -283,6 +292,7 @@ div.footer {
 /* Facts section styles */
 
 .facts {
+	margin-top: 3%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -293,14 +303,16 @@ div.footer {
 	width: 50%;
 }
 
-.fact-img {
+.facts-img {
 	display: flex;
+	justify-content: flex-end;
 	width: 50%;
 }
 
 .facts-img img {
-	max-width: 100%;
-	max-height: 100%;	
+	max-height: 100%;
+	/* TODO: do this elegantly */
+	width: 97%;
 }
 
 ul {
@@ -311,5 +323,4 @@ ul {
 
 li {
 	padding: 1%;
-	/* list-style-type: square; */
 }
