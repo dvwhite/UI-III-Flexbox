@@ -66,13 +66,9 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 body {
-	/* margin-left: 4%;
-	margin-right: 2%; */
 	margin: 0 auto;
 	width: 55%;
 }
-
-
 
 /* Navigation bar */
 .nav-bar {
@@ -92,6 +88,15 @@ nav {
 	justify-content: space-between;
 }
 
+.logo {
+	width: 40%;
+}
+
+.logo figure {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .links {
 	width: 60%;
 	display: flex;
@@ -104,9 +109,31 @@ nav {
 	color: gray;
 }
 
-.logo img {
-	max-height: 100%;
-	max-width: 100%;
+.logo {
+	display: flex;
+	width: 22%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.swap-on-hover {
+	background: url("../img/logo.png") no-repeat;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+.swap-on-hover p {
+	font-size: 400%;
+	overflow: hidden;
+	color: transparent;
+	cursor: default;
+}
+
+.swap-on-hover:hover {
+	background: url("../img/logo-glow.png") no-repeat;
+	transition: opacity 0.5s linear;
 }
 
 .nav-items {
@@ -124,7 +151,7 @@ nav {
 	padding: 0.75% 0;
 }
 
-/* Marketing header */
+/* index.html marketing header */
 
 header {
 	padding: 15% 0 5% 0;
@@ -178,8 +205,8 @@ header {
 }
 
 /* .logo-header-img {
-	/* width: 100%;
-	height: 100%; */
+	width: 100%;
+	height: 100%; 
 } */
 
 .services-header {
@@ -342,11 +369,8 @@ li {
 
 /* Small screens */
 @media only screen and (max-width: 700px) {
-	/* .nav-bar {
-		flex-direction: column;
-		justify-content: space-between;
-	} */
-	
+
+	/* universal nav bar */
 	.nav-bar {
 		flex-direction: column;
 		flex-wrap: wrap;
@@ -381,6 +405,7 @@ li {
 		height: 50%;
 	}
 
+	/* services.html */
 	.tile-row{
 		flex-direction: column;
 		margin-bottom: 5%;
@@ -410,5 +435,31 @@ li {
 		width: 100%;
 		height: 100%;
 		justify-content: flex-start;
+	}
+
+	/* index.html */
+
+	.double-div {
+		flex-direction: column;
+	}
+
+	.marketing-anchor {
+		font-size: 3.0vw;
+		width: 75%;
+	}
+
+	.top-content, .bottom-content {
+		flex-direction: column;
+		margin-bottom: 5%;
+		margin-top: 5%;
+	}
+
+	.two-columns, .three-columns {
+		width: 100%;
+		margin-bottom: 5%;
+	}
+
+	.text-header-contents {
+		font-size: 2.0vw;
 	}
 }
